@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /vendor/
+Disallow: /ajax/
+Disallow: /auth.php
+Disallow: /checkout.php
+Disallow: /cart.php
+Disallow: /profile.php
+Disallow: /orders.php
+Disallow: /chatbot_api.php

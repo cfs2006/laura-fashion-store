@@ -1,0 +1,13 @@
+# Disable directory listing
+Options -Indexes
+
+# Block access to specific file extensions (security)
+<FilesMatch "\.(sql|env|ini|log|md|lock|json)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Optional: Ensure rewrite engine is on for any future routing
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+</IfModule>

@@ -1,0 +1,38 @@
+/* Custom CSS bổ sung cho những phần không sử dụng Tailwind */
+.clip-text {
+    overflow: hidden;
+}
+
+/* Header Background Change on Scroll */
+.header-scrolled {
+    background-color: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Hover Blur Effect */
+.categories:hover .category-card:not(:hover) {
+    filter: blur(4px) brightness(0.7);
+    transform: scale(0.98);
+}
+.category-card {
+    transition: filter 0.5s ease, transform 0.5s ease;
+    will-change: transform, filter;
+}
+
+/* Ẩn scrollbar cho phần cuộn ngang nếu có */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
